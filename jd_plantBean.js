@@ -22,7 +22,7 @@ cron "1 7-21/2 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/syn
 京东种豆得豆 = type=cron,script-path=https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_plantBean.js, cronexpr="1 7-21/2 * * *", timeout=3600, enable=true
 
 */
-let sc = require("./cdle_carry_share_code.js")
+let sc = require("johnwick-xyz_jd_share_code.js")
 const $ = new Env('京东种豆得豆');
 //Node.js用户请在jdCookie.js处填写京东ck;
 //ios等软件用户直接用NobyDa的jd cookie
@@ -39,9 +39,9 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode
     // //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-    // 'lsvcdmfjrraodhrrvhcfiz7iye@olmijoxgmjuty7323i6ijrv5tdhd32kefogty5i@gf2njfitdloxldekzam2flrji4@mq65ksgdrkobhiyvkoqfi7ff7i5ac3f4ijdgqji@wkmb7lejrmax2avk7bszvx7s74@4npkonnsy7xi3acvl3goi4ga5gpmpv2km4yj3di@rj7s6mzlk7uognpgua34bszhyf4cpqqtj5vfhta@olmijoxgmjutyif5p35uuja6gwp2ulsp2x6fjoi@dzfuhp3b2fz7mnj5ndxxqsradgg5bsrhuof2mbq',
+    // '',
     // //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-    // 'lsvcdmfjrraodhrrvhcfiz7iye@olmijoxgmjuty7323i6ijrv5tdhd32kefogty5i@gf2njfitdloxldekzam2flrji4@mq65ksgdrkobhiyvkoqfi7ff7i5ac3f4ijdgqji@wkmb7lejrmax2avk7bszvx7s74@4npkonnsy7xi3acvl3goi4ga5gpmpv2km4yj3di@rj7s6mzlk7uognpgua34bszhyf4cpqqtj5vfhta@olmijoxgmjutyif5p35uuja6gwp2ulsp2x6fjoi@dzfuhp3b2fz7mnj5ndxxqsradgg5bsrhuof2mbq',
+    // '',
 ]
 let allMessage = ``;
 let currentRoundId = null; //本期活动id
