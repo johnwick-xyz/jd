@@ -608,7 +608,7 @@ class CCD:
             prizename = draw_data.get('data', {}).get('prizename', '')
             print(f'{msg}  {prizename}')
             num -= 1
-            time.sleep(3)
+            time.sleep(9)
 
     # 查询cc豆及过期cc豆时间
     def get_user_ccd(self):
