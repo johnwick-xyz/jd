@@ -17,7 +17,7 @@ app_ua = ''  # 用app的ua
 
 user_cookie = os.getenv("ccdck")
 flag = 1  # 1开启抓娃娃，0关闭
-doll_draw = 1  # 抓娃娃次数，为几一天只抽几次，总数小于10
+doll_draw = 9  # 抓娃娃次数，为几一天只抽几次，总数小于10
 debug = 0  # 1开启调式
 
 
