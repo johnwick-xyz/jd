@@ -20,8 +20,8 @@ user_cookie = os.getenv("ccdck")
 doll_flag = 1  # 1开启抓娃娃，0关闭
 basket_flag = 1  # 1开启投篮球，0关闭
 
-doll_draw = 1  # 抓娃娃次数，为几一天只抽几次，总数小于10
-basket_draw = 1  # 投篮球次数，为几一天只玩几次，总数小于5
+doll_draw = 9  # 抓娃娃次数，为几一天只抽几次，总数小于10
+basket_draw = 4  # 投篮球次数，为几一天只玩几次，总数小于5
 debug = 0  # 开启调式
 
 
