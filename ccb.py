@@ -22,8 +22,8 @@ user_cookie = os.getenv("ccdck")
 doll_flag  1开启抓娃娃，0关闭
 doll_draw 抓娃娃次数，总数小于10
 '''
-doll_flag = 0  # 1开启抓娃娃，0关闭
-doll_draw = 1
+doll_flag = 1  # 1开启抓娃娃，0关闭
+doll_draw = 10
 
 '''
 basket_flag  1开启投篮球，0关闭
